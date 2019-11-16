@@ -1,9 +1,11 @@
 package com.legenda.lee.studygroovy.groovy.service;
 
 
-import com.groovyexample.groovy.bean.ScriptVariable;
-import com.groovyexample.groovy.bean.RuleEngineExecuteContext;
-import com.groovyexample.groovy.bean.StrategyScriptEntity;
+
+import com.legenda.lee.studygroovy.groovy.bean.RuleEngineExecuteContext;
+import com.legenda.lee.studygroovy.groovy.bean.ScriptVariable;
+import com.legenda.lee.studygroovy.groovy.bean.StrategyScriptEntity;
+
 import java.util.List;
 
 public interface GroovyScriptService {
