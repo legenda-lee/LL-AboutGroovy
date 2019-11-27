@@ -1,6 +1,6 @@
-package com.legenda.lee.studygroovy.groovy.service;
+package com.legenda.lee.studygroovy.usergroovyforrule.service;
 
-import com.legenda.lee.studygroovy.groovy.bean.StrategyScriptEntity;
+import com.legenda.lee.studygroovy.usergroovyforrule.bean.StrategyScriptEntity;
 
 import java.util.List;
 

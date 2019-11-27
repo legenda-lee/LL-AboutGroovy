@@ -1,4 +1,4 @@
-package com.legenda.lee.studygroovy.groovy.bean;
+package com.legenda.lee.studygroovy.usergroovyforrule.bean;
 
 import java.util.Map;
 import lombok.Data;

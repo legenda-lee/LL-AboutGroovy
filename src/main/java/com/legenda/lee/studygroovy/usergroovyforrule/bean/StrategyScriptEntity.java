@@ -1,8 +1,7 @@
-package com.legenda.lee.studygroovy.groovy.bean;
+package com.legenda.lee.studygroovy.usergroovyforrule.bean;
 
 import java.util.Date;
 import lombok.Data;
-import org.apache.commons.lang.StringUtils;
 
 /**
  * script DTO

@@ -1,14 +1,16 @@
-package com.legenda.lee.studygroovy.groovy.service.impl;
+package com.legenda.lee.studygroovy.usergroovyforrule.service.impl;
 
-import com.groovyexample.groovy.bean.ScriptVariable;
-import com.groovyexample.groovy.bean.RuleEngineExecuteContext;
-import com.groovyexample.groovy.bean.StrategyScriptEntity;
-import com.groovyexample.groovy.service.EngineGroovyModuleRule;
-import com.groovyexample.groovy.service.GroovyScriptService;
-import com.groovyexample.groovy.service.StrategyScriptDataSouce;
+
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.legenda.lee.studygroovy.usergroovyforrule.bean.RuleEngineExecuteContext;
+import com.legenda.lee.studygroovy.usergroovyforrule.bean.ScriptVariable;
+import com.legenda.lee.studygroovy.usergroovyforrule.bean.StrategyScriptEntity;
+import com.legenda.lee.studygroovy.usergroovyforrule.service.EngineGroovyModuleRule;
+import com.legenda.lee.studygroovy.usergroovyforrule.service.GroovyScriptService;
+import com.legenda.lee.studygroovy.usergroovyforrule.service.StrategyScriptDataSouce;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.legenda.lee.studygroovy.groovy.service;
+package com.legenda.lee.studygroovy.usergroovyforrule.service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
