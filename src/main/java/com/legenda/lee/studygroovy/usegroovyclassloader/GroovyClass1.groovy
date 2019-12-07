@@ -14,4 +14,9 @@ class GroovyClass1 {
         return "name: " + name + ", sex: " + sex + ", age: " + age;
     }
 
+    public String sayHello1(Map<String, Object> context, String feature, String operator, int condition) {
+        return context.get(feature) + operator + condition;
+    }
+
+
 }

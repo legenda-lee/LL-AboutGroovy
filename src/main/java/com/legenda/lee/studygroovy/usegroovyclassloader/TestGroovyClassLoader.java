@@ -35,15 +35,26 @@ public class TestGroovyClassLoader {
         }
 
         try {
-            // 获得GroovyShell_2加载后的class
+            // 获得GroovyClass1加载后的class
             Class<?> groovyClass = groovyClassLoader.parseClass(groovyFile);
-            // 获得GroovyShell_2的实例
+            // 获得GroovyClass1的实例
             GroovyObject groovyObject = (GroovyObject) groovyClass.newInstance();
-            // 反射调用sayHello方法得到返回值
-            Object methodResult = groovyObject.invokeMethod("sayHello", new Object[] {name, sex, age});
-            if (methodResult != null) {
-                result = methodResult.toString();
-            }
+            // // 反射调用sayHello方法得到返回值
+            // Object methodResult = groovyObject.invokeMethod("sayHello", new Object[] {name, sex, age});
+            // if (methodResult != null) {
+            //     result = methodResult.toString();
+            // }
+
+            // 反射调用sayHello1方法得到返回值
+            // Map<String, Object> context = new HashMap<>();
+            // context.put("field1", 2);
+            // Object methodResult1 = groovyObject.invokeMethod("sayHello1", new Object[] {context, "field1", ">", 2});
+            // if (methodResult1 != null) {
+            //     result = methodResult1.toString();
+            //     GroovyShell groovyShell = new GroovyShell();
+            //     result = groovyShell.evaluate(result).toString();
+            // }
+
         } catch (Exception e) {
         }
 
@@ -51,8 +62,8 @@ public class TestGroovyClassLoader {
     }
 
     public static void main(String[] args) throws Exception {
-
         initGroovyClassLoader();
         System.out.println(invokeSayHello("张三", "男", 25));
     }
+
 }
