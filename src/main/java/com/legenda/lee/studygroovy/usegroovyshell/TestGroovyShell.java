@@ -35,15 +35,14 @@ public class TestGroovyShell {
 
 
 
-        // String script = "def sayHello(result) {\n" +
-        //         "    \"我是字段值\"\n" +
-        //         "}\n" +
-        //         "\n" +
-        //         "sayHello(result)";
+        String script = "def sayHello(result) {\n" +
+                "    result \n" +
+                "}\n" +
+                "sayHello(result)";
 
-        String script = "sayHello(result) {\n" +
-                "    \"我是字段值\"\n" +
-                "}\n";
+        // String script = "sayHello(result) {\n" +
+        //         "    result \n" +
+        //         "}\n";
 
 
         Binding binding1 = new Binding();
