@@ -1,11 +1,19 @@
-// 带参数的groovy方法
-def sayHello(name) {
-    println "Hello " + name + "."
+import com.alibaba.fastjson.JSONObject
 
-    // 如果不写return, groovy方法的默认最后一行为 方法的返回值
-    //return "GroovyShell_1中的sayHello()方法的返回值"
-    "GroovyShell_1中的sayHello(name)方法的返回值"
+sayHello(name) {
+    "我是字段值"
 }
 
-// 运行groovy方法
 sayHello(name)
+
+
+getIpCity(result) {
+    String city = null;
+    JSONObject jo = JSONObject.parseObject(result);
+    if ("0".equals(jo.getString("code"))) {
+        JSONObject data = jo.getJSONObject("data");
+        city = data.getString("city");
+    }
+    return city;
+}
+
