@@ -20,7 +20,8 @@ public class TestGroovyShell {
         groovyShell.evaluate("println 'My First Groovy shell.'");
 
         // 方式二：通过evaluate方法调用groovy脚本文件
-        Object result = groovyShell.evaluate(new File("src\\main\\java\\com\\legenda\\lee\\studygroovy\\usegroovyshell\\shell1.groovy"));
+        // Object result = groovyShell.evaluate(new File("src\\main\\java\\com\\legenda\\lee\\studygroovy\\usegroovyshell\\shell1.groovy"));
+        Object result = groovyShell.evaluate(new File("/Users/legenda-lee/Documents/projects/GitHub/LL-AboutGroovy/src/main/java/com/legenda/lee/studygroovy/usegroovyshell/shell1.groovy"));
         System.out.println(result);
 
         // 方式三：你可以传一个参数给Groovy文件并执行
@@ -29,7 +30,8 @@ public class TestGroovyShell {
         binding.setProperty("name", "Legenda-Lee");
 
         GroovyShell groovyShell1 = new GroovyShell(binding);
-        Object result1 = groovyShell1.evaluate(new File("src\\main\\java\\com\\legenda\\lee\\studygroovy\\usegroovyshell\\shell2.groovy"));
+        // Object result1 = groovyShell1.evaluate(new File("src\\main\\java\\com\\legenda\\lee\\studygroovy\\usegroovyshell\\shell2.groovy"));
+        Object result1 = groovyShell1.evaluate(new File("/Users/legenda-lee/Documents/projects/GitHub/LL-AboutGroovy/src/main/java/com/legenda/lee/studygroovy/usegroovyshell/shell2.groovy"));
         System.out.println(result1);
 
     }

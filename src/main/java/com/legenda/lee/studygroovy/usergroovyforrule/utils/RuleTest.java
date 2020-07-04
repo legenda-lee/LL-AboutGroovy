@@ -17,6 +17,7 @@ public class RuleTest {
     public static void main(String[] args) {
         // 这是规则模板
         String template = "import com.legenda.lee.studygroovy.usergroovyforrule.service.*\n" +
+                "import com.legenda.lee.studygroovy.usergroovyforrule.utils.*\n" +
                 "class %s implements EngineGroovyModuleRule {\n" +
                 "    Boolean run(Object context, Object result) {\n" +
                 "        %s //place holder\n" +
@@ -55,9 +56,17 @@ public class RuleTest {
                 "        ";
 
         // 这一部分String的获取逻辑进行可配置化
+        String StrategyLogicUnit5 = "if(context.ruleParamMap.field2.equals('lee2')){\n" +
+                "            MD5Utils.getStringMD5('hehe')\n" +
+                "            return true\n" +
+                "        }\n" +
+                "      return false\n " +
+                "        ";
+
+        // 这一部分String的获取逻辑进行可配置化
         String className = "ScriptClassName";
 
-        String fullScript = String.format(template, className, StrategyLogicUnit4);
+        String fullScript = String.format(template, className, StrategyLogicUnit5);
 
         GroovyClassLoader classLoader = new GroovyClassLoader();
         Class<EngineGroovyModuleRule> aClass = classLoader.parseClass(fullScript);

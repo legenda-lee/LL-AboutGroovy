@@ -16,6 +16,7 @@ public class MD5Utils {
     // System.out.println(a);
   }
   public static String getStringMD5(String input){
+    System.out.println(input);
     return input;
   }
 }
